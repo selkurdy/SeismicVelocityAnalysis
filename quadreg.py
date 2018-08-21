@@ -193,7 +193,7 @@ def getcommandline():
                         help='depth to time conversion, dfv=time to depth conversion')
     parser.add_argument('--horfilename',help='Horizons file name')
     parser.add_argument('--hordatacols',nargs=3,type=int,default=[0,1,2],\
-                        help='x y t[z] column numbers. xy has to be the same as coefs. No interpolation')
+                        help='x y t[z] column numbers. xy has to be the same as coefs. No interpolation. default= 0 1 2')
     parser.add_argument('--horscaleshift',nargs=2,type=float,default=[1.0,0.0],\
                         help='horizon multiplier then shift.dfv= 1.0 0.0')
     parser.add_argument('--startid',type=int,default=0,help='Start record id default=0')
